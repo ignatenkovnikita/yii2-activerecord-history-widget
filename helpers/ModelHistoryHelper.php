@@ -45,7 +45,7 @@ class ModelHistoryHelper
                     /** @var ActiveRecord $model */
                     return $model->formatValue($data['field_name'], $data['user_id']);
                 } else {
-                    throw new Exception('Please implement ' . ModelHistoryInterface::class . ' on ' . get_class($object));
+                    throw new Exception('Please implement ' . ModelHistoryInterface::class . ' on ' . get_class($model));
                 }
             }
         }
