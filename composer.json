@@ -1,21 +1,27 @@
 {
-    "name": "ignatenkovnikita/yii2-activerecord-history-widget",
-    "description": "ActiveRecord History Widget",
-    "type": "yii2-extension",
-    "keywords": ["yii2","extension","ar","history"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Ignatenkov Nikita",
-            "email": "ignatenkov.n@gmail.com"
-        }
-    ],
-    "require": {
-        "yiisoft/yii2": "~2.0.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "ignatenkovnikita\\arh\\": ""
-        }
+  "name": "ignatenkovnikita/yii2-activerecord-history-widget",
+  "description": "ActiveRecord History Widget",
+  "type": "yii2-extension",
+  "keywords": [
+    "yii2",
+    "extension",
+    "ar",
+    "history"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ignatenkov Nikita",
+      "email": "ignatenkov.n@gmail.com"
     }
+  ],
+  "require": {
+    "yiisoft/yii2": "~2.0.0",
+    "nhkey/yii2-activerecord-history": "1.1.2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "ignatenkovnikita\\arh\\": ""
+    }
+  }
 }
