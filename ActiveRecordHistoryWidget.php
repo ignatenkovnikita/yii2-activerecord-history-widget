@@ -19,13 +19,11 @@ class ActiveRecordHistoryWidget extends Widget
     
     public function run()
     {
-        $tableName = $this->model::tableName();
+        $tableName = $this->model->tableName();
         $query = (new \yii\db\Query())
             ->from('{{%modelhistory}}')
             ->where(['table' => $tableName])
             ->andWhere(['field_id' => $this->model->id])
-            ->andWhere('field_name != \'created_at\'')
-            ->andWhere('field_name != "updated_at"')
             ->orderBy('date DESC');
         $dataProvider = new \yii\data\ActiveDataProvider([
             'query' => $query
