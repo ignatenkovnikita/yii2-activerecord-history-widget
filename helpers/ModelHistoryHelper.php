@@ -13,6 +13,7 @@ use common\ActiveRecord;
 use common\models\User;
 use ignatenkovnikita\arh\interfaces\ModelHistoryInterface;
 use yii\base\Exception;
+use yii\helpers\Inflector;
 
 class ModelHistoryHelper
 {
@@ -62,6 +63,7 @@ class ModelHistoryHelper
     {
         $tableName = self::clearTableName($table);
 
+        $tableName = Inflector::camelize($tableName);
         $class = 'common\\models\\' . ucfirst($tableName);
         $object = \Yii::createObject(['class' => $class]);
         return $object;
