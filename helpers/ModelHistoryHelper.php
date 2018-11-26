@@ -39,7 +39,7 @@ class ModelHistoryHelper
 
     public static function getAuthor($data)
     {
-        if (isset($data['user_id'])) {
+        if (isset($data['user_id']) && !empty($data['user_id'])) {
             $model = User::findOne($data['user_id']);
             if ($model) {
                 if ($model instanceof ModelHistoryInterface) {
