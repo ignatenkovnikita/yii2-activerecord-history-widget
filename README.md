@@ -24,6 +24,10 @@ or add
 to the require section of your `composer.json` file.
 
 
+
+Add behavior in model [instructions](https://github.com/nhkey/yii2-activerecord-history/blob/master/docs/en/usage-as-behavior.md)
+
+
 Usage
 -----
 
