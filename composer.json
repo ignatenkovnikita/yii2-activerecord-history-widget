@@ -17,7 +17,7 @@
   ],
   "require": {
     "yiisoft/yii2": "~2.0.0",
-    "nhkey/yii2-activerecord-history": "dev-master"
+    "nhkey/yii2-activerecord-history": "*"
   },
   "autoload": {
     "psr-4": {
