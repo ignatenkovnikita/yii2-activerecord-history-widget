@@ -25,8 +25,7 @@ class ActiveRecordHistoryWidget extends Widget
         $query = (new \yii\db\Query())
             ->from('{{%modelhistory}}')
             ->where(['table' => $tableName])
-            ->andWhere(['field_id' => $this->model->id])
-            ->orderBy('id DESC');
+            ->andWhere(['field_id' => $this->model->id]);
         $dataProvider = new \yii\data\ActiveDataProvider([
             'query' => $query
         ]);
